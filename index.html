@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="showHomeMessage()">Shenofi</button>
+        <button onclick="showSalesMessage()">Shabi</button>
+    </div>
+    <div class="message" id="message"></div>
+
+    <script>
+        function showHomeMessage() {
+            document.getElementById("message").innerHTML = "Zlay9a is #1";
+           
+        }
+
+        function showSalesMessage() {
+            document.getElementById("message").innerHTML = `
+                <p>Samet les homes</p>
+                <p>Abderahman chikor</p>
+                <p>Zaki les homes bzf!</p>
+                <p>Mahmoud chikor tanik</p>
+                <p>Oauis chikorkom fc25</p>
+                <p>Lebsa chikorkom fortnite ou rocket league</p>
+                <p>Ramzi chikor pes mobile</p>
+            `;
+            
+                
+        }
+    </script>
+</body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <style> 
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: rgb(47, 0, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        #displayText {
+            transition: color 1s ease-in-out;
+        }
+    </style>
+    <script>
+        function changeColor() {
+            const text = document.getElementById("displayText");
+            let colors = ["rgb(255, 0, 0)", "rgb(0, 255, 0)", "rgb(0, 0, 255)", "rgb(255, 255, 0)"];
+            let index = 0;
+            setInterval(() => {
+                text.style.color = colors[index];
+                index = (index + 1) % colors.length;
+            }, 1000);
+        }
+        function showText() {
+            const textElement = document.getElementById("displayText");
+            textElement.innerText = "1S2 > 1S1!";
+        }
+        function showMessage() {
+            alert("prsq hna chwakerhom");
+        }
+        window.onload = changeColor;
+    </script>
+</head>
+<body>
+    <button id="colorButton" onclick="showText()">7a9i9a</button>
+    <p id="displayText"></p>
+    <button id="messageButton" onclick="showMessage()">3lah?</button>
+</body>
+</html>
